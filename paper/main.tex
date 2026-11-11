@@ -41,7 +41,7 @@ Let $E$ be the middle-thirds Cantor set and, for an integer $b\ge 2$, let $\nu_b
 
 \section{Introduction}
 
-Let $E\subset[0,1]$ be the middle-thirds Cantor set. For an integer $b\ge2$, an interval $[kb^{-n},(k+1)b^{-n}]$ with integers $k,n$ is called $b$-adic of order $n$, and the \emph{coding tree} $T_{[b]}(E)$ has as its vertices the $b$-adic intervals contained in $[0,1]$ that meet $E$, with an edge between two such intervals when one is contained in the other and their orders differ by one; its root is $[0,1]$~\cite[p.~15]{LP}. Each end of $T_{[b]}(E)$, that is, each decreasing sequence $I_0\supset I_1\supset\cdots$ of intervals along a ray from the root, codes the point $\bigcap_nI_n$ of $E$. Simple random walk on $T_{[b]}(E)$ is transient (Lemma~\ref{lem:frostman} below), so it converges to an end, and the law $\mu_b$ of that end is the harmonic measure. Let $\nu_b$ be its image on $E$ under the coding map. As Lyons and Peres note, $\nu_3$ is the Cantor measure~\cite[p.~542]{LP}.
+Let $E\subset[0,1]$ be the middle-thirds Cantor set. For an integer $b\ge2$, an interval $[kb^{-n},(k+1)b^{-n}]$ with integers $k,n$ is called $b$-adic of order $n$, and the \emph{coding tree} $T_{[b]}(E)$ has as its vertices the $b$-adic intervals contained in $[0,1]$ that meet $E$, with an edge between two such intervals when one is contained in the other and their orders differ by one; its root is $[0,1]$. Such trees go back to Furstenberg~\cite{Furstenberg}; see~\cite[p.~15]{LP}. Each end of $T_{[b]}(E)$, that is, each decreasing sequence $I_0\supset I_1\supset\cdots$ of intervals along a ray from the root, codes the point $\bigcap_nI_n$ of $E$. Simple random walk on $T_{[b]}(E)$ is transient (Lemma~\ref{lem:frostman} below), so it converges to an end, and the law $\mu_b$ of that end is the harmonic measure. Let $\nu_b$ be its image on $E$ under the coding map. As Lyons and Peres note, $\nu_3$ is the Cantor measure~\cite[p.~542]{LP}.
 
 Lyons and Peres observe that the base used for coding $E$ does not affect transience of critical random walk, and they state the following question as open~\cite[Question~16.7, p.~542]{LP}: is $\nu_2\perp\nu_3$? We answer it.
 
@@ -54,7 +54,7 @@ The proof compares the conditional probabilities with which $\nu_2$ and $\nu_3$ 
 \section{Harmonic measure on coding trees}\label{sec:prelim}
 
 \subsection*{Networks}
-We use the electrical apparatus of~\cite[Chapter~2]{LP} with unit conductances. For a vertex $v$ of a locally finite rooted tree $T$ write $T^v$ for the subtree of descendants of $v$ (including $v$), and for $R\ge1$ let $\mathcal C_R(v)$ be the effective conductance in $T^v$ between $v$ and the set of descendants at distance $R$ from $v$, all identified to one vertex. By Rayleigh's monotonicity principle~\cite[p.~35]{LP}, $\mathcal C_R(v)$ is nonincreasing in $R$, and its limit $\mathcal C(v)$ is the effective conductance from $v$ to infinity in $T^v$~\cite[p.~27]{LP}. For a child $c$ of $v$, the branch consisting of the edge $(v,c)$ followed by $T^c$ has conductance
+We use the electrical apparatus of~\cite[Chapter~2]{LP} (see also Doyle and Snell~\cite{DS}) with unit conductances. For a vertex $v$ of a locally finite rooted tree $T$ write $T^v$ for the subtree of descendants of $v$ (including $v$), and for $R\ge1$ let $\mathcal C_R(v)$ be the effective conductance in $T^v$ between $v$ and the set of descendants at distance $R$ from $v$, all identified to one vertex. By Rayleigh's monotonicity principle~\cite[p.~35]{LP}, $\mathcal C_R(v)$ is nonincreasing in $R$, and its limit $\mathcal C(v)$ is the effective conductance from $v$ to infinity in $T^v$~\cite[p.~27]{LP}. For a child $c$ of $v$, the branch consisting of the edge $(v,c)$ followed by $T^c$ has conductance
 \[
 G(c)=\frac{\mathcal C(c)}{1+\mathcal C(c)}\qquad(G(c)=0\text{ if }\mathcal C(c)=0),
 \]
@@ -333,11 +333,13 @@ No data were used. The code is available at\\ \url{https://github.com/yspennstat
 
 The paper is part of the Math Brain project, whose public repository is \url{https://github.com/yspennstate/math-brain-public}~\cite{MathBrainRepo}.
 
-\begin{thebibliography}{9}
+\begin{thebibliography}{99}
 \bibitem{ACY} D.~Allen, S.~Chow and H.~Yu, \emph{Dyadic approximation in the middle-third Cantor set}, Selecta Math. (N.S.) \textbf{29} (2023), Paper No.~11; arXiv:2005.09300.
 \bibitem{Bugeaud} Y.~Bugeaud, \emph{Distribution Modulo One and Diophantine Approximation}, Cambridge Tracts in Mathematics~193, Cambridge University Press, Cambridge, 2012.
 \bibitem{BCM} Y.~Bugeaud, M.~Cipu and M.~Mignotte, \emph{On the representation of Fibonacci and Lucas numbers in an integer base}, Ann. Math. Qu\'e. \textbf{37} (2013), 31--43.
 \bibitem{Cassels} J.~W.~S.~Cassels, \emph{On a problem of Steinhaus about normal numbers}, Colloq. Math. \textbf{7} (1959), 95--101.
+\bibitem{DS} P.~G.~Doyle and J.~L.~Snell, \emph{Random Walks and Electric Networks}, Carus Mathematical Monographs~22, Mathematical Association of America, Washington, DC, 1984.
+\bibitem{Furstenberg} H.~Furstenberg, \emph{Intersections of Cantor sets and transversality of semigroups}, in: Problems in Analysis (Sympos. Salomon Bochner, Princeton Univ., 1969), Princeton University Press, Princeton, NJ, 1970, 41--59.
 \bibitem{HochmanShmerkin} M.~Hochman and P.~Shmerkin, \emph{Equidistribution from fractal measures}, Invent. Math. \textbf{202} (2015), 427--479; arXiv:1302.5792.
 \bibitem{Kakutani} S.~Kakutani, \emph{On equivalence of infinite product measures}, Ann. of Math. (2) \textbf{49} (1948), 214--224.
 \bibitem{LP} R.~Lyons and Y.~Peres, \emph{Probability on Trees and Networks}, Cambridge Series in Statistical and Probabilistic Mathematics~42, Cambridge University Press, New York, 2016. Page numbers refer to the version of 19 August 2026 at \url{https://rdlyons.pages.iu.edu/prbtree/}.
