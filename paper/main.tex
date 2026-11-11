@@ -104,6 +104,8 @@ For $n\ge0$ let
 A_n=\sum_{v\in\cD_n}\sqrt{\mu(v)\nu(v)}.
 \]
 
+This is the Hellinger criterion on which Kakutani's dichotomy for infinite product measures rests~\cite{Kakutani}.
+
 \begin{lemma}\label{lem:hellinger}
 The sequence $(A_n)$ is nonincreasing, and $\mu\perp\nu$ if and only if $A_n\to0$.
 \end{lemma}
@@ -244,7 +246,7 @@ using that $\alpha$ is irrational ($2^q=3^p$ has no solution in positive integer
 \[
 u_n(x)=\{2^na_{m_n}(x)\}\in[0,1).
 \]
-Thus $C_{m_n}(x)$ has length $r_n2^{-n}$, and its left endpoint lies at relative position $u_n(x)$ in the dyadic interval of order $n$ that contains $a_{m_n}(x)$.
+Thus $C_{m_n}(x)$ has length $r_n2^{-n}$, and its left endpoint lies at relative position $u_n(x)$ in the dyadic interval of order $n$ that contains $a_{m_n}(x)$. Lemma~\ref{lem:mixing} below is a statement about the distribution of $u_n$ for each large $n$. Its almost sure relative, that $\nu$-almost every point of $E$ is normal in base~$2$, is due to Cassels~\cite{Cassels} and Schmidt~\cite{Schmidt}, whose proofs also go through the Fourier transform of the Cantor measure, a product of cosines; Hochman and Shmerkin~\cite{HochmanShmerkin} extend it to every ergodic $\times3$-invariant measure of positive dimension.
 
 \begin{lemma}\label{lem:mixing}
 Let $\lambda$ be a probability measure on $E$ with $\lambda\ll\nu$, let $L\ge1$ and $s\in\{0,2\}^L$, and let $S_n=\{x\in E:(\xi_{m_n-L+1}(x),\dots,\xi_{m_n}(x))=s\}$. For every continuous $\phi$ on $\R/\Z$,
@@ -335,7 +337,11 @@ The paper is part of the Math Brain project, whose public repository is \url{htt
 \bibitem{ACY} D.~Allen, S.~Chow and H.~Yu, \emph{Dyadic approximation in the middle-third Cantor set}, Selecta Math. (N.S.) \textbf{29} (2023), Paper No.~11; arXiv:2005.09300.
 \bibitem{Bugeaud} Y.~Bugeaud, \emph{Distribution Modulo One and Diophantine Approximation}, Cambridge Tracts in Mathematics~193, Cambridge University Press, Cambridge, 2012.
 \bibitem{BCM} Y.~Bugeaud, M.~Cipu and M.~Mignotte, \emph{On the representation of Fibonacci and Lucas numbers in an integer base}, Ann. Math. Qu\'e. \textbf{37} (2013), 31--43.
+\bibitem{Cassels} J.~W.~S.~Cassels, \emph{On a problem of Steinhaus about normal numbers}, Colloq. Math. \textbf{7} (1959), 95--101.
+\bibitem{HochmanShmerkin} M.~Hochman and P.~Shmerkin, \emph{Equidistribution from fractal measures}, Invent. Math. \textbf{202} (2015), 427--479; arXiv:1302.5792.
+\bibitem{Kakutani} S.~Kakutani, \emph{On equivalence of infinite product measures}, Ann. of Math. (2) \textbf{49} (1948), 214--224.
 \bibitem{LP} R.~Lyons and Y.~Peres, \emph{Probability on Trees and Networks}, Cambridge Series in Statistical and Probabilistic Mathematics~42, Cambridge University Press, New York, 2016. Page numbers refer to the version of 19 August 2026 at \url{https://rdlyons.pages.iu.edu/prbtree/}.
+\bibitem{Schmidt} W.~M.~Schmidt, \emph{On normal numbers}, Pacific J. Math. \textbf{10} (1960), 661--672.
 \bibitem{Stewart} C.~L.~Stewart, \emph{On the representation of an integer in two different bases}, J. Reine Angew. Math. \textbf{319} (1980), 63--72.
 \bibitem{code} Y.~Shmalo, \emph{Code for this paper}, \url{https://github.com/yspennstate/cantor-harmonic-codings-singular}.
 \bibitem{MathBrainRepo} Y.~Shmalo, \emph{Math Brain: public snapshot, code and tests}, 2026, \url{https://github.com/yspennstate/math-brain-public}.
